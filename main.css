@@ -11,8 +11,6 @@ html {
 .NavSection {
   margin-top: 0rem;
   background-image: url("images/Home-BG.png");
-  /* height: 100%; */
-  min-height: 64rem;
   width: 100%;
   height: clamp(40rem,70vw,70rem);
   background-position: center;
@@ -381,12 +379,15 @@ h1 {
 }
 
 .SolutionNav {
-  height: 70rem;
   background-image: url(images/solution.png);
-  background-size: 120rem 120rem;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  width: 100%;
+  height: clamp(40rem,70vw,70rem);
+  position: relative;
+  object-fit: cover;
 }
 
 .SolutionNav .topnav {
@@ -408,29 +409,25 @@ h1 {
   color: rgb(255, 255, 255);
 }
 
-.SolutionNav .flexContainer .textArea {
-  width: 70rem;
-  padding: 5rem;
+.SolutionNav .text {
+  margin-top: 10rem;
+  width: clamp(30rem, 70vw,80rem);
 }
 
-.SolutionNav .flexContainer .text {
-  margin-top: 3rem;
-  width: 80rem;
-}
-
-.SolutionNav .flexContainer .text h1 {
+.SolutionNav .text h1 {
   text-align: left;
   color: #1B2D55;
   font-size: clamp(2rem, 3vw, 6rem);
-  margin-top: 9rem;
+  width: clamp(20rem, 60vw,60rem);
 }
 
 .SolutionNav .sub-text {
-  width: 60rem;
   float: left;
   margin-top: 6rem;
   color: #1B2D55;
-  font-size: clamp(2.2rem, 2.0vw, 4rem);
+  font-size: clamp(1.6rem, 2vw, 3rem);
+  width: clamp(20rem, 80vw,80rem);
+  text-align: justify;
 }
 
 .solutionDisability {
@@ -446,15 +443,16 @@ h1 {
 }
 
 .solutionDisability .solution-text p {
-  font-size: clamp(0.5rem, 2.5vw, 2.2rem);
-  margin-top: 3rem;
-  width: 100rem;
+  font-size: clamp(0.5rem, 2.3vw, 2.3rem);
+  margin: 3rem;
+  width: clamp(35rem, 80vw,80rem);
+  text-align: justify;
 }
 
 .solutionDisability .Text h1 {
-  font-size: clamp(1.5rem, 3vw, 3rem);
-  margin-top: 3rem;
-  width: 70rem;
+  font-size: clamp(1rem, 3vw, 3rem);
+  width: clamp(10rem, 70vw,70rem);
+  margin: 3rem;
   color: #122a5e;
 }
 
@@ -493,7 +491,7 @@ h1 {
 .solutionDisability .cards-box .solutionCards h2,
 .solutionCard h2 {
   margin-top: 3rem;
-  text-align: center;
+  text-align: center; 
   color: rgb(20, 20, 61);
   font-size: clamp(1rem, 2.5vw, 2.5rem);
 }
@@ -511,39 +509,45 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .tools .text {
   padding: 3rem;
-  margin: 0rem 25rem 0rem 25rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 .tools .text h1 {
   text-align: center;
   color: rgb(20, 20, 61);
-  font-size: clamp(2rem, 4vw, 5rem);
+  font-size: clamp(1rem, 4vw, 5rem);
 }
 
 .tools .text p {
   color: rgb(20, 20, 61);
-  font-size: clamp(2.2rem, 2.0vw, 2.6rem);
+  font-size: clamp(1.5rem, 2.3vw, 2.6rem);
   margin-top: 2rem;
   text-align: justify;
 }
 
-.tools .heading {
-  margin: 2rem 26rem 0rem 26rem;
-}
-
-.tools .heading h2 {
+.tools .text h2 {
+  margin-top: 4rem;
   color: #707070;
-  font-size: clamp(2rem, 2.5vw, 4rem);
+  font-size: clamp(2rem, 3vw, 4rem);
   text-align: center;
 }
 
 .tools .components {
-  margin: 9rem;
-  justify-content: space-around;
+  justify-content:center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -555,12 +559,11 @@ h1 {
   margin: 3rem;
   border: 2px solid black;
   border-radius: 2.2rem;
-
 }
 
 .tools .components .small-card h3 {
   color: #1B2D55;
-  font-size: clamp(1.1rem, 2vw, 2rem);
+  font-size: clamp(0.5rem, 2vw, 2rem);
   justify-content: center;
   text-align: center;
   padding: 1.9rem;
@@ -569,63 +572,62 @@ h1 {
 
 .tools .card {
   background-color: #398A89;
-  border-radius: 4.6rem;
-  height: clamp(20rem, 40rem, 40rem);
-}
-
-.tools .card .Content {
-  margin: 0rem 25rem 0rem 25rem;
-  align-items: center;
-  justify-content: space-around;
+  border-radius: 3.0rem;
+  width: clamp(40rem,80vw,80rem);
   display: flex;
   flex-direction: column;
+  justify-self: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
-.tools .card .Content h2 {
+.tools .card h2 {
   color: rgb(20, 20, 61);
-  font-size: clamp(2rem, 4vw, 4rem);
+  font-size: clamp(1rem, 4vw, 4rem);
   margin-top: 2rem;
   text-align: center;
+  /* border: 2px solid black; */
 }
 
 .tools .card p {
   color: black;
-  font-size: clamp(1rem, 2.6vw, 2.6rem);
-  margin-top: 2rem;
+  font-size: clamp(1.6rem, 2.4vw, 2.4rem);
+  margin: 1rem;
+  padding: 1rem;
   text-align: justify;
 }
 
 .tools .card .login-box {
   background-color: white;
   border-radius: 2rem;
-  width: clamp(15rem, 47vw, 47rem);
-  margin-top: 5rem;
+  width: clamp(20rem, 42vw, 42rem);
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   flex-direction: row;
 }
 
-.tools .card .login-box p {
+.tools .card .login-box p1 {
   text-align: center;
-  font-size: clamp(0.5rem, 2vw, 2rem);
-  margin: 1rem 1rem 1rem;
+  float: left ;
+  font-size: clamp(0.2rem, 2vw, 2rem);
+  padding: 1rem;
+  margin-top: 1.2rem;
 }
 
 .tools .card .login-box button {
   background-color: #1B2D55;
   text-decoration: none;
-  display: inline-block;
+  float: right;
+  display:block;
   cursor: pointer;
   color: white;
-  border-radius: 1rem;
+  border-radius: 1.6rem;
   border: none;
-  font-size: clamp(0.5rem, 1.6vw, 1.6rem);
+  font-size: clamp(1rem, 1.6vw, 1.6rem);
   text-align: center;
-  height: clamp(1rem, 3vw, 3rem);
-  width: clamp(1rem, 8vw, 8rem);
-  margin: 1rem 1rem 1rem 0rem;
+  height: clamp(1.2rem, 3.4vw, 3.4rem);
+  width: clamp(5rem, 8vw, 8rem);
+  margin: 2rem 1rem 1rem 0rem;
 }
 
 @media(max-width:998px) {
