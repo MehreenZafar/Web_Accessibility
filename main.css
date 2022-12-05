@@ -12,7 +12,7 @@ html {
   margin-top: 0rem;
   background-image: url("images/Home-BG.png");
   width: 100%;
-  height: clamp(40rem,70vw,70rem);
+  height: clamp(40rem, 70vw, 70rem);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +25,7 @@ html {
   margin: 3rem;
   width: auto;
   max-width: 90rem;
+  z-index: 1;
 }
 
 .NavSection .container .topnav {
@@ -127,7 +128,7 @@ html {
   position: relative;
 }
 
-h1 {
+.cardSection h1 {
   color: rgb(20, 20, 61);
   font-size: clamp(2rem, 2.5vw, 4.5rem);
   text-align: center;
@@ -377,7 +378,11 @@ h1 {
   text-align: left;
   width: clamp(10rem, 29vw, 29rem);
 }
-
+/******************************
+**********************************
+--------------Solution----------------
+******************************
+***********************************/
 .SolutionNav {
   background-image: url(images/solution.png);
   background-position: center;
@@ -385,7 +390,7 @@ h1 {
   background-size: cover;
 
   width: 100%;
-  height: clamp(40rem,70vw,70rem);
+  height: clamp(40rem, 70vw, 70rem);
   position: relative;
   object-fit: cover;
 }
@@ -395,7 +400,8 @@ h1 {
   background-color: #018E86;
 }
 
-.SolutionNav .topnav a {
+.SolutionNav .topnav a,
+.About-Nav .topnav a {
   float: left;
   color: #f2f2f2;
   text-align: center;
@@ -404,21 +410,22 @@ h1 {
   font-size: 1.7rem;
 }
 
-.SolutionNav .topnav a:hover {
+.SolutionNav .topnav a:hover,
+.About-Nav .topnav a:hover {
   background-color: rgba(2, 51, 81, 0.671);
   color: rgb(255, 255, 255);
 }
 
 .SolutionNav .text {
   margin-top: 10rem;
-  width: clamp(30rem, 70vw,80rem);
+  width: clamp(30rem, 70vw, 80rem);
 }
 
 .SolutionNav .text h1 {
   text-align: left;
   color: #1B2D55;
   font-size: clamp(2rem, 3vw, 6rem);
-  width: clamp(20rem, 60vw,60rem);
+  width: clamp(20rem, 60vw, 60rem);
 }
 
 .SolutionNav .sub-text {
@@ -426,7 +433,7 @@ h1 {
   margin-top: 6rem;
   color: #1B2D55;
   font-size: clamp(1.6rem, 2vw, 3rem);
-  width: clamp(20rem, 80vw,80rem);
+  width: clamp(20rem, 80vw, 80rem);
   text-align: justify;
 }
 
@@ -445,13 +452,13 @@ h1 {
 .solutionDisability .solution-text p {
   font-size: clamp(0.5rem, 2.3vw, 2.3rem);
   margin: 3rem;
-  width: clamp(35rem, 80vw,80rem);
+  width: clamp(35rem, 80vw, 80rem);
   text-align: justify;
 }
 
 .solutionDisability .Text h1 {
   font-size: clamp(1rem, 3vw, 3rem);
-  width: clamp(10rem, 70vw,70rem);
+  width: clamp(10rem, 70vw, 70rem);
   margin: 3rem;
   color: #122a5e;
 }
@@ -491,7 +498,7 @@ h1 {
 .solutionDisability .cards-box .solutionCards h2,
 .solutionCard h2 {
   margin-top: 3rem;
-  text-align: center; 
+  text-align: center;
   color: rgb(20, 20, 61);
   font-size: clamp(1rem, 2.5vw, 2.5rem);
 }
@@ -547,7 +554,7 @@ h1 {
 }
 
 .tools .components {
-  justify-content:center;
+  justify-content: center;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -573,7 +580,7 @@ h1 {
 .tools .card {
   background-color: #398A89;
   border-radius: 3.0rem;
-  width: clamp(40rem,80vw,80rem);
+  width: clamp(40rem, 80vw, 80rem);
   display: flex;
   flex-direction: column;
   justify-self: center;
@@ -586,7 +593,6 @@ h1 {
   font-size: clamp(1rem, 4vw, 4rem);
   margin-top: 2rem;
   text-align: center;
-  /* border: 2px solid black; */
 }
 
 .tools .card p {
@@ -608,7 +614,7 @@ h1 {
 
 .tools .card .login-box p1 {
   text-align: center;
-  float: left ;
+  float: left;
   font-size: clamp(0.2rem, 2vw, 2rem);
   padding: 1rem;
   margin-top: 1.2rem;
@@ -618,7 +624,7 @@ h1 {
   background-color: #1B2D55;
   text-decoration: none;
   float: right;
-  display:block;
+  display: block;
   cursor: pointer;
   color: white;
   border-radius: 1.6rem;
@@ -628,6 +634,296 @@ h1 {
   height: clamp(1.2rem, 3.4vw, 3.4rem);
   width: clamp(5rem, 8vw, 8rem);
   margin: 2rem 1rem 1rem 0rem;
+}
+
+/******************************
+**********************************
+--------------About us ----------------
+******************************
+***********************************/
+
+.About-Nav {
+  margin-top: 0rem;
+  background-image: url("images/About-BG.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: auto;
+  justify-content: center;
+  width: 100%;
+  height: clamp(30rem, 62vw, 62rem);
+  position: relative;
+  object-fit: cover;
+}
+
+.About-Nav .topnav {
+  overflow: hidden;
+  background-color: rgba(3, 19, 109, 0);
+}
+
+.About-Nav .content {
+  display: flex;
+  margin-top: 13rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+
+.About-Nav .content .text h1 {
+  text-align: center;
+  color: rgb(1, 37, 71);
+  font-size: clamp(4rem, 7vw, 9rem);
+  margin: 5rem;
+}
+
+.About-Nav .content .card {
+  background-color: rgb(255, 255, 255);
+  width: clamp(20rem, 80vw, 100rem);
+  box-shadow: 0rem 2rem 1rem rgb(100, 100, 100);
+  border-radius: 2rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.About-Nav .content .card .card-text h1 {
+  margin-top: 3rem;
+  font-size: clamp(2rem, 3vw, 4rem);
+}
+
+.About-Nav .content .card .card-text p {
+  font-size: clamp(0.5rem, 2vw, 3rem);
+  text-align: justify;
+  padding: 3rem 7rem 3rem 7rem;
+}
+
+.About-Nav .content .card .images {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+.About-Nav .content .card .images .imageContent img {
+  width: clamp(3rem, 22vw, 20rem);
+  height: clamp(3rem, 22vw, 20rem);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.About-Nav .content .card .images .imageContent p {
+  font-size: clamp(0.5rem, 2vw, 3rem);
+  font-weight: bold;
+  color:rgb(20, 20, 61);
+}
+.container{
+  width: 100%;
+  height: 40rem;
+  position: relative;
+  background: none;
+  z-index: -1;
+}
+.Motivation{
+  background-image: url('images/imageedit_1_2687901098.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  object-fit: cover;
+}
+.Motivation .Motivation-text h1, .timeline .text-section h1{
+  margin-top: 3rem;
+  font-size: clamp(2rem, 5vw, 5rem);
+  color:rgb(20, 20, 61);
+}
+
+.Motivation .Motivation-text p{
+  font-size: clamp(1rem, 3vw, 3rem);
+  padding: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+  color: #313030;
+  /* line-height: 2rem; */
+  width: clamp(20rem,90vw,90rem);
+}
+.Vision{
+  background-image: url('images/imageedit_1_2687901098.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+.Vision .VisionCards{
+  margin-top: 3rem;
+  background-size: 100rem 90rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Vision .VisionCards .VisionCard {
+  background-color: #f8fcfb69;
+  width: clamp(19rem, 37vw, 37rem);
+  margin: 8rem;
+  justify-content: center;
+  border-radius: 2.2rem;
+  box-shadow: 0rem 1.5rem 1rem rgb(148, 148, 148);
+  /* border: 2px solid #1B2D55; */
+}
+
+.Vision .VisionCards .VisionCard h2{
+  margin-top: 3rem;
+  text-align: center;
+  color: rgb(20, 20, 61);
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+}
+
+.Vision .VisionCards .VisionCard p{
+  font-size: clamp(0.75rem, 2vw, 2.2rem);
+  text-align: left;
+  color: #757171;
+  margin: 2rem;
+}
+.timeline{
+  background-color: #d0eeed;
+  height: auto;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+.timeline .text-section{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.timeline .text-section p{
+  font-size: clamp(0.75rem, 1.75vw, 1.75rem);
+  text-align: left;
+  color: black;
+  /* line-height: 2rem; */
+  margin: 3rem;
+}
+
+/*--------------*/
+/* The actual timeline (the vertical ruler) */
+.timeline .timeline-containers{
+  position: relative;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline .timeline-containers::after {
+  content: '';
+  position: absolute;
+  width: 0.6rem;
+  background-color: rgb(20, 20, 61);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.3rem;
+}
+
+/* Container around content */
+.timeline-Container {
+  padding: 1rem 4rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.timeline-Container::after {
+  content: '';
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: -1.2rem;
+  background-color: rgb(20, 20, 61);
+  top: 1.5rem;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 2.2rem;
+  width: 0;
+  z-index: 1;
+  right: 3rem;
+  border: medium solid rgb(20, 20, 61) ;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent rgb(20, 20, 61);
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 2.2rem;
+  width: 0;
+  z-index: 1;
+  left: 3rem;
+  border: medium solid rgb(20, 20, 61);
+  border-width: 10px 10px 10px 0;
+  border-color: transparent rgb(20, 20, 61) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -13px;
+}
+
+/* The actual content */
+.Content {
+  padding: 1rem 2rem;
+  background-color: white;
+  position: relative;
+  border-radius: 3rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Content h2{
+  margin-top: 1rem;
+  text-align: center;
+  color: rgb(20, 20, 61);
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+}
+.Content p{
+  font-size: clamp(1rem, 1.75vw, 1.75rem);
+  text-align: left;
+  color: black;
+  margin: 1rem;
 }
 
 @media(max-width:998px) {
